@@ -1,11 +1,12 @@
 ﻿using DesignPatterns._1_Strategy;
+using DesignPatterns._2_Observer;
 
 Console.WriteLine("Choose an operation:");
 Console.WriteLine("------------------------");
 Console.WriteLine("Behavioral Patterns");
 Console.WriteLine("------------------------");
 Console.WriteLine("1 - Chapter 1 - Strategy - SimUDuck");
-Console.WriteLine("2 - Observer");
+Console.WriteLine("2 - Chapter 2 - Observer - WeatherStation");
 Console.WriteLine("3 - Command");
 Console.WriteLine("4 - Template");
 Console.WriteLine("5 - Iterator");
@@ -38,6 +39,9 @@ switch (option.KeyChar)
 {
     case '1':
         ExecuteStrategy.Execute();
+        break;
+    case '2':
+        ExecuteObserver.Execute();
         break;
 }
 
