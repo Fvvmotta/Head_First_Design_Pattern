@@ -1,12 +1,13 @@
 ﻿using DesignPatterns._1_Strategy;
 using DesignPatterns._2_Observer;
+using DesignPatterns._3_Decorator;
 
 Console.WriteLine("Choose an operation:");
 Console.WriteLine("------------------------");
 Console.WriteLine("Behavioral Patterns");
 Console.WriteLine("------------------------");
-Console.WriteLine("1 - Chapter 1 - Strategy - SimUDuck");
-Console.WriteLine("2 - Chapter 2 - Observer - WeatherStation");
+Console.WriteLine("1 - Chapter 1 - Strategy - SimUDuck - Behavioral Patterns");
+Console.WriteLine("2 - Chapter 2 - Observer - WeatherStation - Behavioral Patterns");
 Console.WriteLine("3 - Command");
 Console.WriteLine("4 - Template");
 Console.WriteLine("5 - Iterator");
@@ -14,10 +15,10 @@ Console.WriteLine("6 - State");
 Console.WriteLine("------------------------");
 Console.WriteLine("Structural Patterns");
 Console.WriteLine("------------------------");
-Console.WriteLine("7 - Decorator");
+Console.WriteLine("7 - Chapter 3 - Decorator - StarBuzz - Structural Patterns");
 Console.WriteLine("8 - Adapter");
 Console.WriteLine("9 - Facade");
-Console.WriteLine("10 - Composite");
+Console.WriteLine("10 - Composite");                                                                                                                                                      
 Console.WriteLine("11 - Proxy");
 Console.WriteLine("12 - Composite");
 Console.WriteLine("------------------------");
@@ -42,6 +43,9 @@ switch (option.KeyChar)
         break;
     case '2':
         ExecuteObserver.Execute();
+        break;
+    case '7':
+        ExecuteDecorator.Execute();
         break;
 }
 
